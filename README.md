@@ -45,7 +45,7 @@ We provide the following examples to perform unsupervised representation learnin
 
 ## Citation
 
-Tongzhou Wang, Phillip Isola. "Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere", arXiv preprint, 2020.
+Tongzhou Wang, Phillip Isola. "Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere". *International Conference on Machine Learning*. 2020.
 
 ```
 @article{wang2020hypersphere,
