@@ -24,14 +24,16 @@ def parse_option():
     parser.add_argument('--lr', type=float, default=None,
                         help='Learning rate. Default is linear scaling 0.12 per 256 batch size')
     parser.add_argument('--lr_decay_rate', type=float, default=0.1, help='Learning rate decay rate')
-    parser.add_argument('--lr_decay_epochs', type=str, default='155,170,185', help='When to decay learning rate')
+    parser.add_argument('--lr_decay_epochs', default=[155, 170, 185], nargs='*', type=int,
+                        help='When to decay learning rate')
     parser.add_argument('--momentum', type=float, default=0.9, help='SGD momentum')
     parser.add_argument('--weight_decay', type=float, default=1e-4, help='L2 weight decay')
     parser.add_argument('--feat_dim', type=int, default=128, help='Feature dimensionality')
 
     parser.add_argument('--num_workers', type=int, default=6, help='Number of data loader workers to use')
     parser.add_argument('--log_interval', type=int, default=40, help='Number of iterations between logs')
-    parser.add_argument('--gpus', type=str, default='0', help='List of GPUs to use, e.g., 0,1,2,3')
+    parser.add_argument('--gpus', default=[0], nargs='*', type=int, 
+                        help='List of GPU indices to use, e.g., --gpus 0 1 2 3')
 
     parser.add_argument('--data_folder', type=str, default='./data', help='Path to data')
     parser.add_argument('--result_folder', type=str, default='./results', help='Base directory to save model')
@@ -41,8 +43,7 @@ def parse_option():
     if opt.lr is None:
         opt.lr = 0.12 * (opt.batch_size / 256)
 
-    opt.gpus = list(map(lambda x: torch.device('cuda', int(x)), opt.gpus.split(',')))
-    opt.lr_decay_epochs = list(map(int, opt.lr_decay_epochs.split(',')))
+    opt.gpus = list(map(lambda x: torch.device('cuda', x), opt.gpus))
 
     opt.save_folder = os.path.join(
         opt.result_folder,
