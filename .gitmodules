@@ -1,0 +1,3 @@
+[submodule "examples/moco"]
+	path = examples/moco
+	url = git@github.com:SsnL/moco.git

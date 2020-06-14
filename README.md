@@ -39,9 +39,9 @@ align_uniform.uniform_loss(x)
 
 ## Examples
 
-We provide the following examples to perform unsupervised representation learning using these two losses:
+We provide the following [examples](./examples) to perform unsupervised representation learning using these two losses:
 + [STL-10](examples/stl10)
-+ [ImageNet-100 Subset with a MoCo Variant (coming soon)](examples/moco)
++ [ImageNet-100 Subset with a MoCo Variant](https://github.com/SsnL/moco/tree/align_uniform)
 
 ## Citation
 
