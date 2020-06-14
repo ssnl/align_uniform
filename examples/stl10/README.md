@@ -1,13 +1,15 @@
 # STL-10 Representation Learning with Alignment and Uniformity Losses
 
 ## Requirements
-+ Python >= 3.6
-+ torch >= 1.4.0
-+ torchvision
+```
+Python >= 3.6
+torch >= 1.4.0
+torchvision
+```
 
 ## Getting Started
 + Training an encoder:
-  ```py
+  ```sh
   python main.py
   ```
   
@@ -16,7 +18,7 @@
   See [main.py](./main.py) for more command-line arguments.
 
 + Evaluating an encoder:
-  ```py
+  ```sh
   python linear_eval.py [PATH_TO_ENCODER]
   ```
   
