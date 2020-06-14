@@ -3,7 +3,7 @@
 ## Requirements
 ```
 Python >= 3.6
-torch >= 1.4.0
+torch >= 1.5.0
 torchvision
 ```
 
