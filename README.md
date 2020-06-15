@@ -10,7 +10,7 @@ These metrics/losses are useful for:
 2. (as losses) directly training the encoder.
 
 Requirements:
-+ PyTorch >= 1.4.0
++ PyTorch >= 1.5.0
 
 ## Documentation
 
