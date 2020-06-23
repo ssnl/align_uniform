@@ -107,7 +107,7 @@ def main():
             unif_loss_val = (uniform_loss(x, t=opt.unif_t) + uniform_loss(y, t=opt.unif_t)) / 2
             loss = align_loss_val * opt.align_w + unif_loss_val * opt.unif_w
             align_meter.update(align_loss_val, x.shape[0])
-            unif_meter.update(unif_loss_val, x.shape[0])
+            unif_meter.update(unif_loss_val)
             loss_meter.update(loss, x.shape[0])
             loss.backward()
             optim.step()
