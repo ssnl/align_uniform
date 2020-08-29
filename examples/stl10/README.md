@@ -27,7 +27,10 @@ torchvision
   See [linear_eval.py](./linear_eval.py) for more command-line arguments.
 
 ## Reference Validation Accuracy
-83.19% using default options:
+83.19% using 4 GPUs with default options:
 + AlexNet-variant encoder architecture.
 + Loss: `L_align(alpha=2) + L_uniform(t=2)`.
 + Classification on penultimate layer (fc7) activations.
+
+With 8 GPUs, @sachit-menon kindly reported 83.39%.
+

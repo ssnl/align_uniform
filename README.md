@@ -4,6 +4,7 @@ This repository provides a PyTorch implementation of the *alignment* and *unifor
 
 + [arXiv Paper](https://arxiv.org/abs/2005.10242)
 + [Project Page](https://ssnl.github.io/hypersphere)
++ [Code for ImageNet and ImageNet-100 with a MoCo Variant](https://github.com/SsnL/moco/tree/align_uniform)
 
 These metrics/losses are useful for:
 1. (as metrics) quantifying encoder feature distribution properties,
