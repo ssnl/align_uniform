@@ -30,9 +30,9 @@ def parse_option():
     parser.add_argument('--weight_decay', type=float, default=1e-4, help='L2 weight decay')
     parser.add_argument('--feat_dim', type=int, default=128, help='Feature dimensionality')
 
-    parser.add_argument('--num_workers', type=int, default=6, help='Number of data loader workers to use')
+    parser.add_argument('--num_workers', type=int, default=20, help='Number of data loader workers to use')
     parser.add_argument('--log_interval', type=int, default=40, help='Number of iterations between logs')
-    parser.add_argument('--gpus', default=[0], nargs='*', type=int, 
+    parser.add_argument('--gpus', default=[0], nargs='*', type=int,
                         help='List of GPU indices to use, e.g., --gpus 0 1 2 3')
 
     parser.add_argument('--data_folder', type=str, default='./data', help='Path to data')
