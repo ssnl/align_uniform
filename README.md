@@ -52,8 +52,14 @@ Tongzhou Wang, Phillip Isola. "Understanding Contrastive Representation Learning
 @article{wang2020hypersphere,
   title={Understanding Contrastive Representation Learning through Alignment and Uniformity on the Hypersphere},
   author={Wang, Tongzhou and Isola, Phillip},
-  journal={arXiv preprint arXiv:2005.10242},
-  year={2020}
+  booktitle={Proceedings of the 37th International Conference on Machine Learning},
+  pages={9929--9939},
+  year={2020},
+  editor={Hal Daumé III and Aarti Singh},
+  volume={119},
+  series={Proceedings of Machine Learning Research},
+  month={13--18 Jul},
+  publisher={PMLR},
 }
 ```
 
