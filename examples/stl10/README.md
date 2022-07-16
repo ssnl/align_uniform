@@ -13,7 +13,7 @@ torchvision
   python main.py
   ```
   
-  You may use `--gpus` to specify multiple GPUs to use, e.g., `--gpus 1,3`.
+  You may use `--gpus` to specify multiple GPUs to use, e.g., `--gpus 1 3`.
 
   See [main.py](./main.py) for more command-line arguments.
 
